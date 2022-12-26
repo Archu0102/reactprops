@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Children4 from './Component/chidren4/Children4';
+import Children1 from './Component/Children1';
+import Children2 from './Component/Children2';
+import Children3 from './Component/Children3';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Children1 name="chidren 1"/>
+    <Children2 name="children 2" address="bihar"/>
+    <Children3 name="children 3" address="delhi"/>
+    <Children4>
+    <h1>hello i am children 4 and here used curly brackeet and props.children</h1>
+    </Children4>
+    </>
   );
 }
 
